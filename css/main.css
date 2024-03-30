@@ -1,0 +1,89 @@
+/* modules */
+@import url("./presets.css");
+@import url("./flex.css");
+@import url("./sections.css");
+
+body {
+  background-color: black;
+}
+
+/* navbar */
+nav {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  background-color: transparent;
+  width: calc(100% - 80px);
+  padding: 15px 40px;
+  user-select: none;
+}
+
+nav ul li {
+  display: inline;
+  transition: all .4s ease;
+}
+
+.btn-nav {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 0px 15px;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.btn-nav-span {
+  background-color: #FFF;
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0px;
+  left: 0;
+  transition: all .4s ease;
+}
+
+.btn-nav:hover .btn-nav-span {
+  transform: scaleX(1);
+}
+
+h2 {
+  margin-left: 40px;
+  font-size: 90px;
+  line-height: 90px;
+  font-weight: 500;
+  border-bottom: 2px solid white;
+  padding: 0px 30px 10px 0px;
+  width: fit-content;
+}
+
+p {
+  width: 30%;
+  margin: 30px 0px 30px 40px;
+  font-size: 20px;
+}
+
+.section-btn {
+  margin-left: 40px;
+  background-color: white;
+  padding: 10px 30px;
+  border-radius: 18px;
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  transition: all .4s ease;
+}
+
+.section-btn:hover {
+  cursor: pointer;
+  letter-spacing: 1px;
+}
